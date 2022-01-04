@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="pb-5">
+      
+    <div class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="box my-5">
+                        <div class="card shadow">
+                            <div class="card-header text-center">
+                                <h3>Submit Data</h3>
+                                <div class="msg">
+                                    <p id="msg"></p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form id="form" action="#">
+                                    <div class="form-group">
+                                        <input id="name" class="form-control" type="text" placeholder="Name">
+                                        <strong id="nameO" class="text-danger"></strong>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <input id="email" class="form-control" type="gmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <input id="username" class="form-control" type="text" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="button" class="btn btn-primary mt-2" type="submit" value="Sign Up">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="age">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header text-center">
+                            <h3>AGE CALCULATOR</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="age" action="#">
+                                <div class="form-group mb-2">
+                                    <input id="ageName" class="form-control" type="text" placeholder="Name">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input id="ageYear" class="form-control" type="text" placeholder="Age">
+                                </div>
+                                <div class="form-group">
+                                    <input id="result" class="btn btn-primary" type="submit" value="Result">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <p id="outputResult"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h3>CURRENCY CONVERTER</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="clearfix" id="currency" action="#">
+                                <div class="form-group mb-2 w-50 float-left">
+                                    <input id="curr" class="form-control" type="text">
+                                </div>
+                                <div class="form-group mb-4 w-25 float-right">
+                                    <button id="usd" class="btn btn-primary mb-1" value="86">USD</button>
+                                    <button id="eur" class="btn btn-primary mb-1" value="97">EUR</button>
+                                    <button id="gbp" class="btn btn-primary mb-1" value="116">GBP</button>
+                                    <button id="cad" class="btn btn-primary" value="67">CAD</button>
+                                </div>
+                                <div class="form-group mb-2 w-50 float-left">
+                                    <h4 id="taka" class="alert alert-success text-center"></h4>
+                                </div>
+                                <div class="form-group w-25 float-right ml-5">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header text-center">
+                            <h3>Marriage Age Checker</h3>
+                        </div>
+                        <div class="result">
+                            <p id="mresult"></p>
+                        </div>
+                        <div class="card-body">
+                            <form id="mform" action="#">
+                                <div class="form-group mb-2">
+                                    <input id="mname" class="form-control" type="text" placeholder="Name">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input id="mgender" class="form-control" type="text" placeholder="Male of Female">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <input id="mage" class="form-control" type="text" placeholder="Age">
+                                </div>
+                                <div class="form-group">
+                                    <button id="mbutton" class="btn btn-primary">Get Result</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="function.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
